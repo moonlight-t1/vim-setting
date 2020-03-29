@@ -1,11 +1,10 @@
 call plug#begin('~/.vim/plugged')
-     Plug 'scrooloose/nerdtree'         	" NerdTree
-     Plug 'fratajczak/one-monokai-vim'	    " One Monokai Theme
-     Plug 'vim-airline/vim-airline'     	" Vim AirLine
-     Plug 'Raimondi/delimitMate'        	" Delimit Mate
-     Plug 'terryma/vim-multiple-cursors'    " Muliple Cursor
-     Plug 'terryma/vim-smooth-scroll'       " Smooth Scroll
-     "Plug 'Shougo/deoplete.nvim'            " Auto Complete
+    Plug 'scrooloose/nerdtree'                                 	" NerdTree
+    Plug 'fratajczak/one-monokai-vim'	                        " One Monokai Theme
+    Plug 'vim-airline/vim-airline'                            	" Vim AirLine
+    Plug 'Raimondi/delimitMate'                             	" Delimit Mate
+    Plug 'terryma/vim-multiple-cursors'                         " Muliple Cursor
+    Plug 'terryma/vim-smooth-scroll'                            " Smooth Scroll
 call plug#end()
 
 
@@ -87,6 +86,8 @@ map <C-a> ggVG " 전체 선택
 map <C-c> "+y  " 복사   
 map <C-s> <ESC>:w<CR>
 imap <C-s> <ESC>:w<CR>
+"map <C-s> <ESC>:Prettier<CR>
+"imap <C-s> <ESC>:Prettier<CR>
 map <C-S-e> <ESC>:NERDTreeToggle<CR>
 imap <C-S-e> <ESC>:NERDTreeToggle<CR>
 map <F6> <ESC>:w<CR>:call RunFile(expand('%:e'), expand('%'))<CR>
